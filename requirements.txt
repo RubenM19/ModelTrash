@@ -1,0 +1,6 @@
+fastapi
+tensorflow
+numpy
+uvivorn
+PIL
+io
