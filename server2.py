@@ -33,9 +33,9 @@ def prepare_image(img: Image.Image, target_size: tuple) -> np.ndarray:
 @app.post("/predict")
 async def predict_image(file: UploadFile = File(...)):
     # Verifica que el archivo sea una imagen
+    print(file.content_type)
     if file.content_type not in ["image/jpeg", "image/png"]:
         raise HTTPException(status_code=400, detail="Tipo de archivo no permitido")
-
     try:
         # Lee la imagen
         contents = await file.read()
