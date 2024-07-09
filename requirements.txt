@@ -5,3 +5,4 @@ uvivorn
 pillow
 io
 pickle
+pydantic
