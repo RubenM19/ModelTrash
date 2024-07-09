@@ -2,5 +2,6 @@ fastapi
 tensorflow
 numpy
 uvivorn
-PIL
+pillow
 io
+pickle
